@@ -1,0 +1,100 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background-color: #ffffff;
+}
+
+.explorar-tipo {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.explorar-tipo h2 {
+    color: #312783;
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 32px;
+}
+
+.botao span {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.botoes-tipo {
+    display: flex;
+    justify-content: center;
+    gap: 51px;
+    flex-wrap: wrap;
+    margin-top: 0;
+}
+
+.botao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    background-color: #dcdaf7;
+    color: #312783;
+    border-radius: 40px;
+    width: 190px;
+    height: 150px;
+    font-weight: 00;
+}
+
+.botao img {
+    width: 60px; 
+    height: 60px;
+    margin-bottom: 13px;
+}
+
+.botao.ativo {
+    border: 2px solid #2e2672;
+    background-color: #fff;
+}
+
+.separator {
+    border: none;
+    border-top: 2px solid #312783; 
+    margin: 5px 10px 20px 5px; 
+    width: auto;
+}
+
+.books-section {
+    padding: 40px 60px;
+}
+
+
+.book-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 25px;
+}
+
+.book-card {
+    display: block;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px #555555;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: inherit; 
+}
+
+.book-card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.book-card h3 {
+    font-size: 15px;
+    color: #312783;
+    margin: 10px 0 5px;
+}
+
+.book-card p {
+    font-size: 13px;
+    color: #555555;
+}

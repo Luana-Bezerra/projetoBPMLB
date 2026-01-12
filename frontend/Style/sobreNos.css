@@ -1,0 +1,49 @@
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background-color: #ffffff;
+}
+.sobre-nos {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+.sobre-nos-texto {
+    width: 55%;
+}
+
+.sobre-nos-texto p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.sobre-nos-texto h2 {
+    font-size: 36px;
+    color: #242978;
+    margin-bottom: 20px;
+    writing-mode: horizontal-tb; 
+    transform: none;
+}
+
+.sobre-nos-imagem img {
+    width: 531px;
+    height: 538px;
+}
+
+.contato {
+    margin-top: 5px;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.info-item img {
+    margin-right: 10px;
+}

@@ -1,0 +1,74 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffffff;
+}
+.contato-section {
+    font-family: 'Poppins', sans-serif;
+    color: #222;
+}
+
+.contato-title {
+    background-color: #f7a700;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.contato-title h2 {
+
+    margin: 0;
+    color: white;
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.contato-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 40px;
+    gap: 40px;
+    background: #fff;
+}
+
+.contato-form {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contato-form input,
+.contato-form textarea {
+    border: 1.5px solid #ddd;
+    border-radius: 8px;
+    padding: 12px 15px;
+    font-size: 14px;
+    resize: none;
+}
+
+.contato-form textarea {
+    height: 120px;
+}
+
+.btn-enviar {
+    background-color: #242978; 
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 0;
+    font-size: 15px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    height: 40px;
+}
+
+.contato-imagem {
+    width: 36%;
+    display: flex;
+    justify-content: center;
+}
+
+.contato-imagem img {
+    max-width: 100%;
+    height: auto;
+}

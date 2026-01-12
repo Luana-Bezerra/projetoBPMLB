@@ -1,0 +1,84 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background-color: #ffffff;
+}
+.LivroContaner{
+    position: relative;
+    width: 400px;
+}
+.livro, .info {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.livro {
+    top: 20px;
+    left: 20px;
+    width: 80px;
+}
+
+.info {
+    top: 20px;
+    left: 120px; 
+}
+
+.botao-renovacao {
+    background-color: #312783; 
+    color: white; 
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    margin-top: 5px; 
+     
+}
+.Retangulo{
+    width: 500px;
+}
+
+.Lado {
+  display: flex;
+  gap: 98px; 
+}
+
+.Entregue {
+    position: absolute;
+    width:40px;
+    height: 40px;
+    margin-top: 50px;
+    top: 0;
+    bottom: 0;
+   
+}
+
+.tabela{
+    width: 100%;
+    max-width: 900px; 
+    margin: 20px auto;
+}
+
+.historico-cabecalho {
+    font-weight: bold;
+    background-color: #f0f0f0;
+}
+.linha {
+    display: flex;
+    border-bottom: 1px solid #ccc; 
+    padding: 5px 0;
+}
+.historico-linha .coluna {
+    flex: 1; 
+    padding: 0 5px; 
+    text-align: left
+}
+.livro-coluna {
+    flex: 2;
+    text-align: left;
+}
+
+.coluna {
+    flex: 1;
+    padding: 8px;
+    border: 1px
+}

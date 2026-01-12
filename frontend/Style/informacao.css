@@ -1,0 +1,131 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background-color: #ffffff;
+}
+
+.pagina {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+/* --- Detalhes da obra --- */
+.detalhes-obra {
+    padding: 20px 30px;
+    max-width: 1120px;
+    margin: 40px auto 20px auto;
+}
+
+.detalhes-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.detalhes-header h2 {
+    font-size: 32px;
+    color: #312783;
+    font-weight: 400;
+    margin: 0;
+}
+
+.carrinho {
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+}
+
+.detalhes-conteudo {
+    display: flex;
+    gap: 20px;
+}
+
+.capa-livro {
+    width: 259px;
+    height: 379px;
+    border-radius: 10px;
+}
+
+.info-livro {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.info-livro p {
+    margin: 0;
+    line-height: 1;
+    color: #333;
+    font-size: 17px;
+}
+
+.info-livro strong {
+    color: #000;
+}
+
+/* --- Sinopse --- */
+.sinopse {
+    border-radius: 6px;
+    padding: 20px 30px;
+    max-width: 1120px;
+    margin: 0 auto 40px auto;
+}
+
+.sinopse-header {
+    border-bottom: 2px solid #ccc;
+    margin-bottom: 10px;
+}
+
+.sinopse-header h2 {
+    font-weight: 400;
+    margin: 0;
+    font-size: 32px;
+    color: #312783;
+}
+
+.sinopse p {
+    color: #333;
+    text-align: justify;
+    font-size: 18px;
+}
+
+
+
+.tabela-container {
+    max-width: 1120px; /* mesma largura do texto da sinopse */
+    margin: 40px auto; /* centraliza horizontalmente */
+}
+
+.tabela-container h3 {
+    background-color: #2e2672; /* Roxo do título */
+    color: #fff;
+    padding: 10px 15px;
+    font-weight: 400;
+    font-size: 32px;
+    margin: 0;
+}
+
+.tabela-exemplares {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+}
+
+.tabela-exemplares thead {
+    
+    background-color: #ffffff; /* Cabeçalho roxo */
+    color: #5F5F5F;
+}
+
+.tabela-exemplares th, 
+.tabela-exemplares td {
+    padding: 12px 10px;
+    border-bottom: 1px solid #bfbaba;
+}
+

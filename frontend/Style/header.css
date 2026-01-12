@@ -1,0 +1,49 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background-color: #ffffff;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff; /* fundo claro */
+    padding: 10px 20px ;
+    border-bottom: 15px solid #2c2172; /* linha azul escura */
+}
+
+.logo img {
+    height: 50px;
+    width: 300px;
+}
+
+
+.container-pesquisa {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* espaço entre a lupa e a barra */
+}
+
+.icone-lupa {
+    width: 43px;
+    height: 40px;
+}
+
+.BarraDePesquisa input {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 100px;
+    padding: 10px 10px;
+    border: 2px solid #151372;
+    width: 500px;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmar pedido - Biblioteca Pública Municipal Luiz Brasil</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="Style/base.css">
+    <link rel="stylesheet" href="Style/header.css">
+    <link rel="stylesheet" href="Style/footer.css">
+    <link rel="stylesheet" href="Style/confirmacao.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="http://127.0.0.1:5501/telaInicial.html"><img src="img/logo.png" alt="Logo da Biblioteca" ></a>
+        </div>
+
+        <div class="container-pesquisa">
+            <img src="img/lupa.png" alt="Lupa" class="icone-lupa">
+            <div class="BarraDePesquisa">
+                <input type="text" placeholder="Procure seu livro...">
+            </div>
+        </div>
+
+        <div class="icons">
+            <a href="http://127.0.0.1:5501/Perfil.html"><img src="img/Icon.png" alt="Usuário" width="40" height="40"></a>
+            <a href="http://127.0.0.1:5501/Carrinho.html"><img src="img/carrinho.png" alt="Carrinho" width="55" height="55"></a>
+            <a href="#"><img src="img/menu.png" alt="Menu" width="45" height="50"></a>
+        </div>
+    </header>
+
+    <main class="container container-confirmacao">
+        <div class="conteudo-principal">
+            <div class="coluna-esquerda">
+                <h1 class="titulo-secao-principal">Confirmação de pedido</h1>
+                <section class="secao-confirmacao secao-livros">
+                    <div class="titulo-secao-box">
+                        <img src="img/capa.png" alt="icon livro">
+                        <h2>Livros</h2>
+                    </div>
+                    <div class="item-pedido">
+                        <div class="livro-capa">
+                            <img src="img/Labirinto_do_Fauno.png" alt="Capa Labirinto do fauno">
+                        </div>
+                        <div class="livro-info">
+                            <p class="titulo-livro-conf">O Labirinto do Fauno</p>
+                            <p class="autor-livro-conf">Guillermo del Toro, Cornelia Funke</p>
+                        </div>
+                        <div class="livro-acoes">
+                            <div class="quantidade-box">
+                                Quantidade 1
+                            </div>
+                            <a href="carrinho.html"><button class="botao-adicionar-mais">Adicionar mais</button></a>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="secao-confirmacao secao-info-pedido">
+                    <div class="titulo-secao-box">
+                        <h2>Informações do Pedido</h2>
+                    </div>
+                    <div class="detalhes-pedido">
+                        <p class="detalhe-item">O Labirinto do Fauno — Guillermo del Toro, Cornelia Funke</p>
+                        <p class="detalhe-item">Seu livro será entregue em:</p>
+                        <p class="detalhe-item">Rua das Acácias, 155 — Bairro Centro, Garanhuns/PE</p>
+                        <p class="detalhe-item endereco-entrega">CEP: 55090-191</p>
+                        <p class="detalhe-item">Taxa de entrega: R$ 6,00</p>
+                        <p class="detalhe-item">Devolução: em até 1 mês após a entrega.</p>
+                        <p class="detalhe-item obs-biblioteca">Em caso de atraso, será cobrada multa conforme as regras da biblioteca.</p>
+                    </div>
+                </section>
+            </div>
+
+            <div class="coluna-direita">
+                <h1 class="titulo-secao-principal">Método de recebimento</h1>
+                <section class="secao-confirmacao secao-recebimento">
+                    <div class="metodo-opcao">
+                        <h3 class="subtitulo-recebimento">Seu endereço</h3>
+                        <div class="endereco-box">
+                            <div class="tipo-local">
+                                <img src="img/casa.png" alt="icone casa">
+                                Casa
+                            </div>
+                            <div class="info-endereco">
+                                <p>Rua Das Acácias, 155</p>
+                                <p>CEP: 55090-191</p>
+                                <p>Bairro: Centro</p>
+                                <p>Cidade: Garanhuns</p>
+                                <p>Estado: PE</p>
+                            </div>
+                            <div class="opcoes-endereco">
+                                <a href="../projeto/Perfil.html"><button class="botao-alterar">Alterar</button></a>
+                                <input type="checkbox" checked>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="metodo-opcao">
+                        <h3 class="subtitulo-recebimento">Retirar na biblioteca</h3>
+                        <div class="endereco-box endereco-biblioteca">
+                            <div class="tipo-local">
+                                <img src="img/biblioteca.png" alt="icone biblioteca">
+                                Biblioteca
+                            </div>
+                            <div class="info-endereco">
+                                <p>Av. Simoa Gomes, 432</p>
+                                <p>CEP: 55296-705</p>
+                                <p>Bairro: Heliópolis</p>
+                                <p>Cidade: Garanhuns</p>
+                                <p>Estado: PE</p>
+                            </div>
+                            <div class="opcoes-endereco">
+                                <div class="espacamento-alterar"></div>
+                                <input type="checkbox">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="acao-botoes">
+                    <button class="botao-confirmacao-secundario">Cancelar</button>
+                    <button class="botao-confirmacao-principal">Finalizar Pedido</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-left">
+            <img src="img/logo footer.png" alt="Logo da Biblioteca">
+            <div class="endereco">
+                <p><strong>Endereço:</strong></p>
+                <p>502, Av. Simão Gomes, 412 – Heliópolis,<br>
+                Garanhuns – PE, 55296-705<br>
+                <p><strong>E-mail:</strong> contato@biblioteca-example.org</p>            </div>
+        </div>
+
+        <div class="footer-right">
+            <a href="http://127.0.0.1:5501/faleConosco.html" class="btn-contato">Fale conosco</a>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Todos os direitos reservados</p>
+        </div>
+    </footer> 
+</body>
+</html>
