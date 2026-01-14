@@ -6,8 +6,8 @@ body {
 
 .pagina {
     max-width: 1000px;
-    margin: 20px auto;
-    padding: 20px;
+    margin: 10px auto;
+    padding: 10px;
 }
 
 /* --- Detalhes da obra --- */
@@ -76,12 +76,12 @@ body {
     margin: 0 auto 40px auto;
 }
 
-.sinopse-header {
+.sinopse h2{
     border-bottom: 2px solid #ccc;
     margin-bottom: 10px;
 }
 
-.sinopse-header h2 {
+.sinopse h2 {
     font-weight: 400;
     margin: 0;
     font-size: 32px;

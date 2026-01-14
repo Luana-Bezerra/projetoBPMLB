@@ -41,7 +41,7 @@ async function main() {
 function criarCardLivro(livro) {
     const a = document.createElement("a")
     a.classList.add("book-card")                //criação do link e envia o id do livro na URL
-    a.href = `informacao.html?id=${livro.id}`
+    a.href = `informacao.html?titulo=${encodeURIComponent(livro.titulo)}`
 
     const img = document.createElement("img")
     img.src = livro.imagem_url                     // cria a imagem e coloca como texto alternativoo o seu titulo

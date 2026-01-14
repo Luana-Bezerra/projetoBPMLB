@@ -80,6 +80,7 @@ export async function getLivroPorTitulo(titulo) {// usada na tela de informaçã
             titulo,
             autor,
             imagem_url,
+            colecao,
             ano_editora,
             isbn,
             genero,
