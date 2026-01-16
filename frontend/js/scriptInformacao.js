@@ -127,8 +127,28 @@ function configurarBotaoCarrinho(exemplares) {
         return;
     }
 
-    botaoCarrinho.addEventListener("click", () => {
-        alert("Livro adicionado ao carrinho 🛒");
-        // futuramente: localStorage ou POST para backend
+    botaoCarrinho.addEventListener("click", async () => {
+        const livro = exemplares[0];//dados base do livro
+
+        const livroParaCarrinho = {
+            id: livro.id_livro,
+            titulo: livro.titulo,
+            autor: livro.autor,
+            ano_editora: livro.ano_editora,
+            genero: livro.genero,
+            imagem_url: livro.imagem_url
+        };
+
+        const resp = await fetch("/carrinho/adicionar", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            boby: JSON.stringify({ livro: livroParaCarrinho })
+        });
+
+        if (resp.ok) {
+            alert("Livro adicionado ao carrinho 🛒");
+        } else {
+            alert("Não consegui adicionar no carrinho.")
+        }
     });
 }
