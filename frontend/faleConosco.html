@@ -15,7 +15,7 @@
 <body>
     <header>
         <div class="logo">
-            <a href="http://127.0.0.1:5501/telaInicial.html"><img src="img/logo.png" alt="Logo da Biblioteca" ></a>
+            <a href="telaInicial.html"><img src="img/logo.png" alt="Logo da Biblioteca" ></a>
         </div>
 
         <div class="container-pesquisa">
@@ -26,12 +26,11 @@
         </div>
 
         <div class="icons">
-            <a href="http://127.0.0.1:5501/Perfil.html"><img src="img/Icon.png" alt="Usuário" width="40" height="40"></a>
-            <a href="http://127.0.0.1:5501/Carrinho.html"><img src="img/carrinho.png" alt="Carrinho" width="55" height="55"></a>
+            <a href="Perfil.html"><img src="img/Icon.png" alt="Usuário" width="40" height="40"></a>
+            <a href="Carrinho.html"><img src="img/carrinho.png" alt="Carrinho" width="55" height="55"></a>
             <a href="#"><img src="img/menu.png" alt="Menu" width="45" height="50"></a>
         </div>
     </header>
-
     <main>
         <section class="contato-section">
             <div class="contato-title">
@@ -40,19 +39,20 @@
 
             <div class="contato-container">
                 <div class="contato-form">
-                    <input type="text" placeholder="Name">
-                    <input type="email" placeholder="Email">
-                    <input type="tel" placeholder="Número">
-                    <textarea placeholder="Mensagem"></textarea>
+                    <input type="text" id="nome" placeholder="Name">
+                    <input type="email" id="email" placeholder="Email">
+                    <input type="tel" id="numero" placeholder="Número">
+                    <textarea id="mensagem" placeholder="Mensagem"></textarea>
                     <button class="btn-enviar">Enviar</button>
                 </div>
 
                 <div class="contato-imagem">
-                <img src="img/computador.png" alt="Ilustração de contato" width="638" height="505">
+                    <img src="img/computador.png" alt="Ilustração de contato" width="638" height="505">
                 </div>
             </div>
         </section>
     </main>
+
 
     <footer>
         <div class="footer-left">
@@ -65,13 +65,13 @@
         </div>
 
         <div class="footer-right">
-            <a href="http://127.0.0.1:5501/faleConosco.html" class="btn-contato">Fale conosco</a>
+            <a href="faleConosco.html" class="btn-contato">Fale conosco</a>
         </div>
         <div class="footer-bottom">
             <p>© 2025 Todos os direitos reservados</p>
         </div>
     </footer>   
 
-    
+    <script src="/js/scriptFaleConosco.js"></script>
 </body>
 </html>
