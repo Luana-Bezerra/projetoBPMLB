@@ -1,6 +1,6 @@
-window.addEventListener("load", main) // executa quando a página carregar
+window.addEventListener("load", carregarFaleConosco) // executa quando a página carregar
 
-function main() {
+function carregarFaleConosco() {
 
     const botaoEnviar = document.querySelector(".btn-enviar")
 

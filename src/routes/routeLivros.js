@@ -21,7 +21,7 @@ router.post("/importar-livros", importarLivros);
 router.get("/tela-inicial", listarLivrosTelaInicial); 
 // Retorna livros de destaque e lançamentos da tela inicial
 
-router.get("/explorar", explorar); 
+router.get("/explorar-livros", explorar); 
 // Lista livros da página Explorar (com ou sem filtro por gênero)
 
 router.get("/colecao",explorarPorColecao)

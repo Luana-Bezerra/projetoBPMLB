@@ -12,19 +12,19 @@ const app = express();
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-app.use(express.static("frontend"));
+/* 🔹 ROTAS DE API (PRIMEIRO) */
+app.use("/livros", router);
+app.use('/cadastro', cadastroRoutes);
+app.use('/login', RotasLogin);
+
+/* 🔹 ARQUIVOS ESTÁTICOS (DEPOIS) */
 app.use(express.static(meusCaminhos.frontend));
 
 app.get('/', (req, res) => {
     res.sendFile(path.join(meusCaminhos.frontend, 'inicial.html'));
 });
 
-app.use('/cadastro', cadastroRoutes);
-app.use('/login', RotasLogin);
-//app.use(router);
-app.use("/livros", router)
-
-await createTableLivros()
+await createTableLivros();
 
 
 

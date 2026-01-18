@@ -1,6 +1,7 @@
-window.addEventListener("load", main);
+console.log("SCRIPT EXPLORAR CARREGOU");
+window.addEventListener("load", carregarExplorar);
 
-async function main() {
+async function carregarExplorar() {
     const botoesGenero = document.querySelectorAll(".botoes-tipo .botao");
     const bookGrid = document.getElementById("bookGrid");
 
@@ -26,14 +27,15 @@ async function main() {
 async function carregarLivros(genero) {
     const bookGrid = document.getElementById("bookGrid");
     bookGrid.innerHTML = ""; // limpa os cards atuais
-
-    let url = "/explorar";
+    
+    let url = "/livros/explorar-livros";
 
     if (genero) {
         url += `?genero=${encodeURIComponent(genero)}`;
     }
-
+    
     const resposta = await fetch(url);
+
     const livros = await resposta.json();
 
     livros.forEach(livro => {

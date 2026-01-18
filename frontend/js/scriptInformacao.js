@@ -1,8 +1,8 @@
-window.addEventListener("load", main)
+window.addEventListener("load", carregarInformacao)
 
 let exemplares = [] // guarda todos os exemplares do livro
 
-async function main() {
+async function carregarInformacao() {
     const params = new URLSearchParams(window.location.search)
     const titulo = params.get("titulo")
 
