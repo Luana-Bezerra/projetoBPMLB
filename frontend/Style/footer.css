@@ -37,12 +37,10 @@ footer {
 }
 
 .footer-bottom {
-    position: absolute;
-    bottom: 10px;
-    left: 0;
     width: 100%;
     font-size: 0.8rem;
     text-align: center;
+    margin-top: 20px;
 }
 
 /* Estilo para o botão "Fale conosco" */

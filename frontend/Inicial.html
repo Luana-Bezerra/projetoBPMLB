@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="/Style/header.css">
+    <link rel="stylesheet" href="/Style/footer.css">
+    <link rel="stylesheet" href="/Style/telaInicial.css">
+
+    <title>Tela inicial</title>
+</head>
+
+<body>
+    <div id="header"></div>
+
+    <main>
+        <div class="banner-principal">
+            <div class="banner-conteudo">
+                <a href="sobreNos.html" class="botao bt-um">conheça um pouco sobre nós</a>
+            </div>
+        </div>
+
+        <div class="banner-hp">
+            <div class="banner-conteudo-hp">
+                <a href="http://localhost:3000/colecao.html?colecao=Saga%20Harry%20Potter" class="botao bt-dois">Conhecer saga</a>
+            </div>
+        </div>
+
+
+        <!-- ================= DESTAQUES ================= -->
+        <section class="books-section">
+            <div class="destaques-container">
+                <h2 class="title">Destaques</h2>
+                <hr class="separator">
+            </div>
+
+            <!-- JS VAI INSERIR AQUI -->
+            <div class="book-grid" id="destaques"></div>
+        </section>
+
+        <!-- ============== LANÇAMENTOS ================= -->
+        <section class="books-section">
+            <div class="subtitulo">
+                <h2 class="title">Novos lançamentos</h2>
+                <hr class="separator">
+            </div>
+
+            <!-- JS VAI INSERIR AQUI -->
+            <div class="book-grid" id="lancamentos"></div>
+        </section>
+    </main>
+
+    <div id="footer"></div>
+
+    <script src="/js/scriptTelainicial.js"></script>
+    <script src="/js/header.js"></script>
+    <script src="/js/footer.js"></script>
+
+</body>
+
+</html>
