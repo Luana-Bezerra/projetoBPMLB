@@ -5,6 +5,7 @@ import carrinhoRouter from "./routes/routeCarrinho.js";
 import cadastroRoutes from './routes/RotasCadastro.js';
 import RotasLogin from './routes/RotasLogin.js';
 import RotasPerfil from './routes/RotasPerfil.js';
+import { createTableLivros } from './model/livrosModel.js';
 import './data/database.js';
 import path from 'path';
 
@@ -31,7 +32,6 @@ app.use('/cadastro', cadastroRoutes);
 app.use('/login', RotasLogin);
 app.use(RotasPerfil);
 //app.use(router);
-app.use("/livros", router)
 
 await createTableLivros()
 

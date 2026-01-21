@@ -111,9 +111,7 @@ function adicionarAoCarrinho() {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify( { livro: livroParaCarrinho })
-    });
-
-    .then(resp => {
+    }).then(resp => {
         if (resp.ok) alert("Livro adicionado ao carrinho.");
         else alert("Não consegui adicionar ao carrinho.");
     })
