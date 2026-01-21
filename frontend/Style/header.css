@@ -40,10 +40,73 @@ header {
     width: 500px;
 }
 
+.resultado-busca {
+    position: absolute;
+    top: 60px;
+    width: 100%;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    display: none;
+    flex-direction: column;
+    z-index: 1000;
+}
+
+.resultado-busca a {
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #333;
+    border-bottom: 1px solid #eee;
+}
+
+.resultado-busca a:hover {
+    background: #f5f5f5;
+}
+
 .icons {
     display: flex;
     align-items: center;
     gap: 35px;
+}
+
+/* menu*/
+
+.menu-mobile {
+    position: absolute;
+    top: 95px;
+    right: 30px;
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 16px 18px;
+    min-width: 180px;
+
+    display: none;
+    flex-direction: column;
+    gap: 12px;
+
+    box-shadow: 0 10px 30px rgba(49, 69, 180, 0.18);
+    z-index: 1000;
+
+    animation: menuFade 0.25s ease;
+}
+
+.menu-mobile.ativo {
+    display: flex;
+}
+
+.menu-mobile a {
+    text-decoration: none;
+    color: #3a2f8f; /* roxo do site */
+    font-weight: 500;
+    padding: 8px 12px;
+    border-radius: 8px;
+
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+.menu-mobile a:hover {
+    background: #f2f1ff;
+    color: #2a2070;
 }
 
 

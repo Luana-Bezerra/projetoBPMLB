@@ -1,10 +1,11 @@
-window.addEventListener("load", main); // executa quando a página carregar
+window.addEventListener("load", carregarColecao); // executa quando a página carregar
 
-async function main() {
+async function carregarColecao() {
 
     const params = new URLSearchParams(window.location.search);
     const colecao = params.get("colecao");
     const tituloColecao = document.getElementById("nomeColecao");
+    
 
     if (tituloColecao) {
         tituloColecao.textContent = colecao;

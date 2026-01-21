@@ -1,6 +1,6 @@
-window.addEventListener("load", main) // executa quando toda pagina carregar
+window.addEventListener("load", carregarTelaInicial) // executa quando toda pagina carregar
 
-async function main() { 
+async function carregarTelaInicial() { 
 
     const botaoSobre = document.querySelector(".bt-um")
     const botaoSaga = document.querySelector(".bt-dois") // pega os botões existentes
@@ -41,6 +41,7 @@ async function main() {
 function criarCardLivro(livro) {
     const a = document.createElement("a")
     a.classList.add("book-card")                //criação do link e envia o id do livro na URL
+
     a.href = `informacao.html?titulo=${encodeURIComponent(livro.titulo)}`
 
     const img = document.createElement("img")
