@@ -4,6 +4,7 @@ import router from './routes/routeLivros.js'
 import { createTableLivros } from './model/livrosModel.js';
 import cadastroRoutes from './routes/RotasCadastro.js';
 import RotasLogin from './routes/RotasLogin.js';
+import RotasPerfil from './routes/RotasPerfil.js';
 import './data/database.js';
 import path from 'path';
 
@@ -21,6 +22,7 @@ app.get('/', (req, res) => {
 
 app.use('/cadastro', cadastroRoutes);
 app.use('/login', RotasLogin);
+app.use(RotasPerfil);
 //app.use(router);
 app.use("/livros", router)
 

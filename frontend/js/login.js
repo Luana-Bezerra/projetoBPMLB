@@ -1,4 +1,23 @@
 
+async function fetchComToken(url, options = {}) {
+    const token = localStorage.getItem('token');
+    
+    if (!token) {
+        window.location.href = 'login.html';
+        throw new Error('Token ausente');
+    }
+
+    const headers = options.headers || {};
+    headers['Authorization'] = `Bearer ${token}`;
+
+    return fetch(url, {
+        ...options,
+        headers
+    });
+}
+
+
+
 async function fazerLogin(event) {
     event.preventDefault();
 
@@ -15,23 +34,19 @@ async function fazerLogin(event) {
         const data = await response.json();
 
         if (response.ok) {
-            // LOGIN SUCESSO: Guarda os dados do SQLite no localStorage
-            // Assim a página de Perfil poderá ler esses dados depois
+            
+            localStorage.setItem('token', data.token);
+
+            
             localStorage.setItem('usuarioLogado', JSON.stringify(data.usuario));
-            //local storageÉ um armazenamento do navegador, Guarda dados em chave / valor
-            //setItem (chave, valor) = serve para salvar algo
-            //'chave'  → 'usuarioLogado' e 'valor'  → JSON.stringify(data.usuario)
-            // JSON.stringify(data.usuario)= Transforma objeto → string,
-            //data.usuario  =Normalmente vem de uma API (login ou cadastro).
 
             alert('Login realizado com sucesso!');
             window.location.href = 'Perfil.html'; 
         } else {
-            // ERRO: Exibe a mensagem vinda do servidor (ex: "Senha incorreta")
             alert(data.mensagem);
         }
     } catch (error) {
-        console.log(error)
+        console.log(error);
         alert('Erro ao conectar com o servidor');
     }
 }
